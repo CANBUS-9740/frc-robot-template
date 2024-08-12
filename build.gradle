@@ -94,3 +94,5 @@ wpi.java.configureTestTasks(test)
 tasks.withType(JavaCompile) {
     options.compilerArgs.add '-XDstringConcat=inline'
 }
+
+wpi.java.simulationTaskDebug.get().jvmArgs('-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005')

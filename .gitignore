@@ -5,6 +5,8 @@ build/
 .vscode/
 .idea/
 .gradle/
+.run/
 
 imgui.ini
 simgui*
+networktables.json
