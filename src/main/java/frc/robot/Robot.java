@@ -11,12 +11,32 @@ public class Robot extends TimedRobot {
     }
 
     @Override
+    public void robotPeriodic() {
+        CommandScheduler.getInstance().run();
+    }
+
+    @Override
+    public void simulationInit() {
+
+    }
+
+    @Override
+    public void simulationPeriodic() {
+
+    }
+
+    @Override
     public void disabledInit() {
 
     }
 
     @Override
     public void disabledPeriodic() {
+
+    }
+
+    @Override
+    public void disabledExit() {
 
     }
 
@@ -31,12 +51,22 @@ public class Robot extends TimedRobot {
     }
 
     @Override
+    public void teleopExit() {
+
+    }
+
+    @Override
     public void autonomousInit() {
 
     }
 
     @Override
     public void autonomousPeriodic() {
+
+    }
+
+    @Override
+    public void autonomousExit() {
 
     }
 
@@ -51,12 +81,7 @@ public class Robot extends TimedRobot {
     }
 
     @Override
-    public void robotPeriodic() {
-        CommandScheduler.getInstance().run();
-    }
-
-    @Override
-    public void simulationPeriodic() {
+    public void testExit() {
 
     }
 }
